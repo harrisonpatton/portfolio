@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Neucha&family=Oswald:wght@200;300;500&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Harry Belden</title>
+  </head>
+  <body>
+    <main>
+      <!--Navigation Bar -->
+      <nav class="nav">
+        <h1 class="nav__title">Harry Belden</h1>
+        <div class="nav-container margin-right">
+          <button class="sandwich-button">&#9776;</button>
+          <button class="sandwich-button__close hidden">&#9747;</button>
+          <ul class="dropdown-menu">
+            <div class="hero-menu__container">
+              <h1 class="hero-menu">Harry</h1>
+              <p class="hero-menu__subtitle">Web Developer</p>
+            </div>
+            <div class="dropdown-menu__list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="work.html">Skills</a></li>
+              <li>
+                <a href="gallery.html">Work</a>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </div>
+          </ul>
+          <ul class="social"></ul>
+        </div>
+      </nav>
+      <!--JS for collapsable nav bar-->
+      <script>
+        window.onload = function () {
+          const sandwichButton = document.querySelector('.sandwich-button');
+          const sandwichButtonClose = document.querySelector(
+            '.sandwich-button__close'
+          );
+          const dropdown = document.querySelector('.dropdown-menu');
+          const navContainer = document.querySelector('.nav-container');
+          const nav = document.querySelector('.nav');
+          const navTitle = document.querySelector('.nav__title');
+          let isOpen = false;
+
+          sandwichButton.addEventListener('click', function () {
+            dropdown.classList.toggle('active');
+            navTitle.classList.toggle('hidden');
+            sandwichButton.classList.toggle('hidden');
+            sandwichButtonClose.classList.toggle('hidden');
+            navContainer.classList.toggle('margin-right');
+            nav.classList.toggle('show');
+            nav.style.alignItems = 'normal';
+            sandwichButton.style.opacity = 0;
+          });
+
+          sandwichButtonClose.addEventListener('click', function () {
+            dropdown.classList.toggle('active');
+            navTitle.classList.toggle('hidden');
+            sandwichButtonClose.classList.toggle('hidden');
+            sandwichButton.classList.toggle('hidden');
+            navContainer.classList.toggle('margin-right');
+            nav.classList.toggle('show');
+            nav.style.alignItems = 'center';
+            sandwichButton.style.opacity = 1;
+          });
+        };
+      </script>
+      <section id="intro">
+        <h1 class="section-title">
+          Hey! <br />
+          I'm Harry, <br />
+          A Front-End Developer
+        </h1>
+        <p class="section-subtitle">
+          <span class="different-color">C</span>reator. <br />
+          <span class="different-color">C</span>ollaborator. <br />
+          <span class="different-color">C</span>ant' think of a third word that
+          starts with C.
+        </p>
+        <button class="contact-button">
+          <a href="pages/contact.html">Let's get in touch!</a>
+        </button>
+      </section>
+      <section id="portfolio-overview">
+        <h1 class="section-title">Portfolio</h1>
+        <p class="section-subtitle">
+          Take a glance at some of the latest projects I've worked on!
+        </p>
+      </section>
+      <div class="portfolio-grid">
+        <a
+          href="https://chrkho95.github.io/"
+          class="portfolio-grid__box portfolio-grid__box-chris"
+        >
+        </a>
+        <a
+          href="https://chrkho95.github.io/"
+          class="portfolio-grid__box portfolio-grid__box-rpg"
+        >
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

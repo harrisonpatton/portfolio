@@ -1,0 +1,29 @@
+.hidden {
+  display: none;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.margin-right {
+  margin-right: 2.5%;
+}
+
+.current-menu-item {
+  color: black !important;
+}
+
+.white-text {
+  color: white;
+}
+
+.different-color {
+  color: #2272ff;
+  font-family: 'Neucha', cursive;
+}
+
+.large-text {
+  font-size: 1.7501rem;
+}
