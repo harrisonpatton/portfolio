@@ -35,9 +35,12 @@
   }
   &-menu {
     color: #2272ff;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 0.1rem;
 
     &__subtitle {
       color: white;
+      font-family: 'Neucha', cursive;
     }
     &__container {
       padding: 0.5rem 0;
@@ -65,6 +68,7 @@
 
 #intro {
   padding: 3rem 2.25rem;
+  height: 100vh;
 }
 
 #portfolio-overview {
@@ -81,11 +85,11 @@
     background-color: #2272ff;
     background-size: cover;
     opacity: 0.5;
-    transition: all 0.4s;
     aspect-ratio: 1 /1;
     &:hover {
       opacity: 1;
       cursor: pointer;
+      transition: all 0.4s;
     }
     &-chris {
       background-image: url(../img/chris-site.png);
@@ -94,43 +98,42 @@
       background-image: url(../img/rpg-fit.png);
       background-position: center;
     }
-  }
-}
-
-@media screen and (min-width: 50em) {
-  .hero {
-    &::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      max-height: 100vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../img/hero-desktop.jpg);
-      opacity: 1;
-      z-index: -1;
+    &-harry {
+      background-image: url(../img/harry-site.png);
+      background-position: center;
+    }
+    &-trillo {
+      background-image: url(../img/trillo.png);
+      background-position: center;
+    }
+    &-nexter {
+      background-image: url(../img/nexter.png);
+      // background-position: center;
+    }
+    &-natours {
+      background-image: url(../img/natours.png);
+      background-position: center;
     }
   }
 }
 
 //Media Queries
-@media screen and (min-width: 26.25em) {
-  .hero-description {
-    display: none;
-  }
-  .hero {
-    &::before {
-      top: 0px;
+@media screen and (min-width: $bp-smallest) {
+  .portfolio-grid {
+    &__box {
+      width: 33%;
     }
   }
 }
 
-@media screen and (max-width: 26.25em) {
-  .hero-title {
-    display: none;
+@media screen and (min-width: $bp-medium) {
+  .portfolio-grid {
+    &__box {
+      width: 16.666666%;
+    }
+  }
+  #intro,
+  #portfolio-overview {
+    padding: 3rem 4.5rem;
   }
 }

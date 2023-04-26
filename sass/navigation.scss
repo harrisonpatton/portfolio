@@ -14,12 +14,12 @@
 
   &__title {
     font-family: 'Lilita One', cursive;
-    font-size: 4.5vw;
+    font-size: 3rem;
     color: white;
     text-shadow: 0.5px 0.5px 0 black;
     text-transform: uppercase;
-    padding: 2%;
-    padding-left: 4%;
+    padding: 1rem;
+    padding-left: 2rem;
     transition: all 0.2s;
     position: absolute;
     left: 0;
@@ -35,6 +35,7 @@
 .sandwich-button {
   padding: 0.5%;
   margin: 2%;
+  margin-top: -38%;
   margin-right: 5%;
   background-color: transparent;
   border: none;
@@ -44,6 +45,7 @@
 
   &__close {
     background-color: transparent;
+    margin-top: -2%;
     color: #2272ff;
     border: none;
     align-self: flex-end;
@@ -117,13 +119,13 @@
 .dropdown-menu a {
   font-size: 2rem;
   &:hover {
-    color: black;
+    color: white;
   }
 }
 .dropdown-menu__nothome a {
   font-size: 2.3vw;
   &:hover {
-    color: black;
+    color: white;
   }
 }
 
@@ -171,7 +173,7 @@ li a:before {
   left: 0;
   width: 0;
   height: 4px;
-  background-color: #557174;
+  background-color: #2272ff;
   transition: width 0.6s ease-in;
 }
 
@@ -182,7 +184,7 @@ li a:before {
   left: 0;
   width: 0;
   height: 4px;
-  background-color: #c7cfb7;
+  background-color: #2272ff;
   transition: width 0.6s ease-in;
 }
 
@@ -194,7 +196,7 @@ li a:hover:before {
 .nav {
   &__nothome {
     display: flex;
-    background-color: #557174;
+    background-color: #2272ff;
     justify-content: space-around;
     align-items: center;
     transition: all 0.2s;
@@ -210,18 +212,36 @@ li a:hover:before {
 }
 //Media Queries
 
-@media screen and (min-width: 26.25em) {
-  .dropdown-menu__home a {
-    font-size: 5vw;
-    letter-spacing: 0.2vw;
+@media screen and (min-width: $bp-small) {
+  .sandwich-button {
+    font-size: 4.5rem;
+    &__close {
+      font-size: 4.5rem;
+    }
   }
 }
 
-@media screen and (max-width: 26.25em) {
-  .nav {
-    display: flex; //makes nav appear for mobile
+@media screen and (min-width: 50em) {
+  .sandwich-button {
+    font-size: 5.5rem;
+    &__close {
+      font-size: 5.5rem;
+    }
   }
-  // .dropdown-menu__home {
-  //   display: none; //gets rid of main menu for mobile
-  // }
 }
+
+// @media screen and (min-width: 26.25em) {
+//   .dropdown-menu__home a {
+//     font-size: 5vw;
+//     letter-spacing: 0.2vw;
+//   }
+// }
+
+// @media screen and (max-width: 26.25em) {
+//   .nav {
+//     display: flex; //makes nav appear for mobile
+//   }
+// .dropdown-menu__home {
+//   display: none; //gets rid of main menu for mobile
+// }
+// }
