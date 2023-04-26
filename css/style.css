@@ -1,3 +1,27 @@
+@keyframes topFadeOut {
+  0% {
+    position: relative;
+    opacity: 0; }
+  75% {
+    position: relative;
+    top: 25%;
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes rightFadeInOut {
+  0% {
+    position: relative;
+    right: -3rem;
+    opacity: 0; }
+  75% {
+    position: relative;
+    right: 80%;
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    right: 80%; } }
+
 body::before {
   content: '';
   position: fixed;
@@ -182,7 +206,9 @@ html {
   font-size: 3.5rem;
   color: #2272ff;
   font-family: 'Permanent Marker', cursive;
-  letter-spacing: 0.19rem; }
+  letter-spacing: 0.19rem;
+  animation-name: topFadeOut;
+  animation-duration: 8s; }
 
 .section-subtitle {
   color: white;
