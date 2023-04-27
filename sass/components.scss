@@ -10,6 +10,8 @@
   font-size: 1.8rem;
   text-transform: uppercase;
   transition: 0.4s all;
+  animation-name: topFadeOut;
+  animation-duration: 7s;
 
   &:hover {
     background-color: var(--color-primary);
@@ -30,7 +32,7 @@
   font-family: 'Permanent Marker', cursive;
   letter-spacing: 0.19rem;
   animation-name: topFadeOut;
-  animation-duration: 8s;
+  animation-duration: 5s;
   transition: all 0.2s;
 }
 
@@ -39,6 +41,8 @@
   font-size: 1.9rem;
   margin-top: 2.5rem;
   font-family: 'Neucha', cursive;
+  animation-name: topFadeOut;
+  animation-duration: 7s;
   transition: all 0.2s;
 }
 
