@@ -23,6 +23,7 @@
     transition: all 0.2s;
     position: absolute;
     left: 0;
+    text-decoration: none;
   }
 }
 
@@ -42,6 +43,7 @@
   transition: all 0.5s ease-in-out;
   font-size: 3rem;
   color: #2272ff;
+  z-index: 100;
   &:hover {
     cursor: pointer;
   }
@@ -55,6 +57,7 @@
     margin-right: 4%;
     font-size: 3rem;
     transition: all 0.2s;
+    z-index: 100;
     &:hover {
       cursor: pointer;
     }
@@ -154,6 +157,7 @@
   width: 100vw;
   justify-content: space-evenly;
   font-size: 2rem;
+  margin-top: -4.3rem;
   text-transform: uppercase;
   display: -ms-flexbox;
   -webkit-box-orient: vertical;

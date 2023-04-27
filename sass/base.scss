@@ -15,3 +15,21 @@ html {
   font-size: 62.5%;
   font-weight: 700;
 }
+
+body {
+  &::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color-secondary);
+    opacity: 1;
+    z-index: -1;
+  }
+}
