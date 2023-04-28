@@ -76,9 +76,15 @@
   padding-top: 0;
 }
 
+#about-me {
+  padding: 3rem 2.25rem;
+  padding-top: 0;
+}
+
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 3rem;
   &__box {
     height: auto;
     width: 50%;
@@ -133,7 +139,8 @@
     }
   }
   #intro,
-  #portfolio-overview {
+  #portfolio-overview,
+  #about-me {
     padding: 3rem 4.5rem;
   }
 }
