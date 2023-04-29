@@ -955,7 +955,7 @@ figcaption {
     color: #2272ff;
     border: none;
     align-self: flex-end;
-    margin-right: 4%;
+    margin-right: 3.5%;
     font-size: 3rem;
     transition: all 0.2s;
     z-index: 100; }
@@ -1004,7 +1004,7 @@ figcaption {
   padding: 3.1rem 0;
   text-decoration: none;
   color: #2272ff;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Permanent Marker', cursive;
   font-weight: 100; }
 
 .dropdown-menu__home li a:hover {
@@ -1093,13 +1093,33 @@ li a:hover:before {
   .sandwich-button {
     font-size: 4.5rem; }
     .sandwich-button__close {
-      font-size: 4.5rem; } }
+      font-size: 4.5rem; }
+  .dropdown-menu.active {
+    margin-top: -5.5rem; }
+  .hero-menu {
+    font-size: 4.5rem; }
+    .hero-menu__subtitle {
+      font-size: 3rem; }
+  .dropdown-menu a {
+    font-size: 2.5rem; } }
 
 @media screen and (min-width: 50em) {
   .sandwich-button {
     font-size: 5.5rem; }
     .sandwich-button__close {
-      font-size: 5.5rem; } }
+      font-size: 5.5rem; }
+  .dropdown-menu.active {
+    margin-top: -6.5rem; }
+  .hero-menu {
+    font-size: 5rem; }
+    .hero-menu__subtitle {
+      font-size: 3.5rem; }
+  .dropdown-menu a {
+    font-size: 3rem; } }
+
+@media screen and (min-width: 62.5em) {
+  .sandwich-button__close {
+    margin-top: -1.5%; } }
 
 .background-work {
   display: flex;
