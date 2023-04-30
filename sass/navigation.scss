@@ -115,7 +115,6 @@
   padding: 3.1rem 0;
   text-decoration: none;
   color: #2272ff;
-  font-family: 'Permanent Marker', cursive;
   font-weight: 100;
 }
 
@@ -218,6 +217,10 @@ li a:hover:before {
     overflow: hidden;
     transition: all 0.2s;
   }
+}
+
+.hero-menu__container h1 {
+  font-family: 'Permanent Marker', cursive;
 }
 //Media Queries
 

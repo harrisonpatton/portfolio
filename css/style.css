@@ -1004,7 +1004,6 @@ figcaption {
   padding: 3.1rem 0;
   text-decoration: none;
   color: #2272ff;
-  font-family: 'Permanent Marker', cursive;
   font-weight: 100; }
 
 .dropdown-menu__home li a:hover {
@@ -1088,6 +1087,9 @@ li a:hover:before {
   flex-direction: column;
   overflow: hidden;
   transition: all 0.2s; }
+
+.hero-menu__container h1 {
+  font-family: 'Permanent Marker', cursive; }
 
 @media screen and (min-width: 37.5em) {
   .sandwich-button {
