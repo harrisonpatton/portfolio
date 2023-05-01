@@ -857,11 +857,9 @@ figcaption {
   padding: 3rem 2.25rem;
   height: 100vh; }
 
-#portfolio-overview {
-  padding: 3rem 2.25rem;
-  padding-top: 0; }
-
-#about-me {
+#portfolio-overview,
+#about-me,
+#projects {
   padding: 3rem 2.25rem;
   padding-top: 0; }
 
