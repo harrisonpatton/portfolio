@@ -23,7 +23,7 @@
     <main>
       <!--Navigation Bar -->
       <nav class="nav">
-        <h1 class="nav__title">Harry Belden</h1>
+        <a class="nav__title" href="../index.html">Harry Belden</a>
         <div class="nav-container margin-right">
           <button class="sandwich-button">&#9776;</button>
           <button class="sandwich-button__close hidden">&#9747;</button>
@@ -44,14 +44,30 @@
           <ul class="social"></ul>
         </div>
       </nav>
-      <section id="projects">
+      <section id="projects-section">
         <h1 class="section-title">Projects</h1>
         <p class="section-subtitle">
           Take a glance at some of the latest projects I've worked on!
         </p>
-        <button class="portfolio-button">
-          <a href="pages/contact.html">Take a closer look!</a>
-        </button>
+        <div class="projects">
+          <div class="single">
+            <img
+              src="../img/chris-site-2.png"
+              alt="Chris Website Screenshot"
+              class="single-img"
+            />
+            <div class="single-text">
+              <h1 class="single-text__title">Actor Website</h1>
+              <p class="single-text__paragraph">
+                Desgined and built a flexible website for actor Chris Khoshaba.
+                <br />
+                <span class="different-color">Includes:</span> Fully functional
+                javascript gallery, fluid & responsive layout on all screen
+                sizes.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <script src="../navigation.js"></script>
     </main>

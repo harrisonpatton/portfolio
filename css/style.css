@@ -859,7 +859,7 @@ figcaption {
 
 #portfolio-overview,
 #about-me,
-#projects {
+#projects-section {
   padding: 3rem 2.25rem;
   padding-top: 0; }
 
@@ -904,7 +904,8 @@ figcaption {
     width: 16.666666%; }
   #intro,
   #portfolio-overview,
-  #about-me {
+  #about-me,
+  #projects-section {
     padding: 3rem 4.5rem; } }
 
 .nav {
@@ -1121,138 +1122,56 @@ li a:hover:before {
   .sandwich-button__close {
     margin-top: -1.5%; } }
 
-.background-work {
+.projects {
   display: flex;
+  justify-content: center; }
+
+.single {
+  display: flex;
+  padding: 2rem 0;
   flex-direction: column;
   align-items: center; }
-  .background-work::before {
-    content: '';
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #f7f7e8;
-    opacity: 1;
-    z-index: -1; }
-
-.work-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 7vw;
-  text-align: center;
-  padding-top: 3%;
-  text-transform: uppercase;
-  letter-spacing: 0.5vw;
-  color: #557174;
-  margin-bottom: 5%; }
-
-.work-subtitle {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 3%;
-  color: black;
-  line-height: 3rem; }
-
-.headshot {
-  width: 45%; }
-  .headshot-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-.resume {
-  width: 80%;
-  text-align: center;
-  padding: 5%; }
-  .resume:hover {
-    cursor: pointer; }
-  .resume-wrapper {
-    text-align: center;
+  .single-img {
+    width: 300px;
+    -webkit-transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
+    transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
+    transition: 0.6s ease;
+    box-shadow: 0 60px 123px -25px rgba(77, 112, 209, 0.42), 0 35px 75px -35px rgba(77, 112, 209, 0.42); }
+    .single-img:hover {
+      -webkit-transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
+      transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1); }
+  .single-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
-  .resume-btn {
-    padding: 1rem 6vw;
-    background-color: #557174;
-    border: none;
-    border-radius: 5px;
-    margin: 1.5rem 0;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    color: white; }
-    .resume-btn:hover {
-      cursor: pointer; }
-  .resume-btn a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Oswald', sans-serif; }
+    width: 80%;
+    margin-top: 2rem; }
+    .single-text__title {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      padding: 0rem 1.1rem;
+      font-family: 'Permanent Marker', cursive;
+      letter-spacing: 0.19rem;
+      border: 3px solid var(--color-primary); }
+    .single-text__paragraph {
+      color: white;
+      font-size: 1.9rem;
+      margin-top: 2.5rem;
+      font-family: 'Neucha', cursive;
+      letter-spacing: 0.05rem; }
 
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-  overflow: auto; }
+@media screen and (min-width: 25em) {
+  .single-img {
+    width: 370px; } }
 
-#modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 90%;
-  max-height: 90%; }
-
-#modal img {
-  width: 90vw; }
-
-#my-image:active {
-  opacity: 0.51; }
+@media screen and (min-width: 31.25em) {
+  .single-img {
+    width: 450px; } }
 
 @media screen and (min-width: 43.75em) {
-  .background-work {
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0 5%;
-    padding-bottom: 2%; }
-  .background-work .headshot-container {
-    margin: 0; }
-  .work-info {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 3%; }
-  .work-subtitle {
-    text-align: left;
-    padding: 1rem;
-    width: 50%;
-    margin-right: 0.5rem; }
-  .headshot-container,
-  .resume-wrapper {
-    width: 50%; }
-  .resume-wrapper {
-    margin-top: -1.6%; }
-  .headshot {
-    width: 50%; }
-  .resume {
-    width: 50%;
-    padding: 0; } }
+  .single-img {
+    width: 575px; } }
 
-@media screen and (min-width: 50em) {
-  .work-info {
-    justify-content: center; }
-  .work-subtitle {
-    font-size: 2rem; }
-  .large-text {
-    font-size: 2.25rem; }
-  .resume-btn {
-    font-size: 1.8rem; } }
+@media screen and (min-width: 56.25em) {
+  .single-img {
+    width: 750px; } }

@@ -43,7 +43,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html">Skills</a></li>
                     <li>
-                      <a href="gallery.html">Work</a>
+                      <a href="../pages/projects.html">Work</a>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
                   </div>
@@ -51,42 +51,6 @@
                 <ul class="social"></ul>
               </div>
             </nav>
-            <!--JS for collapsable nav bar-->
-            <script>
-              window.onload = function () {
-                const sandwichButton = document.querySelector('.sandwich-button');
-                const sandwichButtonClose = document.querySelector(
-                  '.sandwich-button__close'
-                );
-                const dropdown = document.querySelector('.dropdown-menu');
-                const navContainer = document.querySelector('.nav-container');
-                const nav = document.querySelector('.nav');
-                const navTitle = document.querySelector('.nav__title');
-                let isOpen = false;
-      
-                sandwichButton.addEventListener('click', function () {
-                  dropdown.classList.toggle('active');
-                  navTitle.classList.toggle('hidden');
-                  sandwichButton.classList.toggle('hidden');
-                  sandwichButtonClose.classList.toggle('hidden');
-                  navContainer.classList.toggle('margin-right');
-                  nav.classList.toggle('show');
-                  nav.style.alignItems = 'normal';
-                  sandwichButton.style.opacity = 0;
-                });
-      
-                sandwichButtonClose.addEventListener('click', function () {
-                  dropdown.classList.toggle('active');
-                  navTitle.classList.toggle('hidden');
-                  sandwichButtonClose.classList.toggle('hidden');
-                  sandwichButton.classList.toggle('hidden');
-                  navContainer.classList.toggle('margin-right');
-                  nav.classList.toggle('show');
-                  nav.style.alignItems = 'center';
-                  sandwichButton.style.opacity = 1;
-                });
-              };
-            </script>
   <div class="background-contact">
     <h1 class="contact-title">Let's Chat!</h1>
     <section id="form">
@@ -251,6 +215,7 @@
         }
       </script>
     </div>
+    <script src="../navigation.js"></script>
   </main>
   </body>
   </footer>
