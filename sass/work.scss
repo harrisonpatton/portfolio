@@ -1,6 +1,7 @@
 .projects {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .single {
@@ -29,6 +30,8 @@
     align-items: center;
     width: 80%;
     margin-top: 2rem;
+    z-index: 20;
+    transition: 0.2s all;
     &__title {
       font-size: 2.5rem;
       color: var(--color-primary);
@@ -40,10 +43,22 @@
     &__paragraph {
       color: white;
       font-size: 1.9rem;
-      margin-top: 2.5rem;
+      padding: 5rem 0;
       font-family: 'Neucha', cursive;
       letter-spacing: 0.05rem;
     }
+  }
+}
+
+.reverse img {
+  -webkit-transform: perspective(800px) rotateY(-25deg) scale(0.8)
+    rotateX(10deg);
+  transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg);
+  &:hover {
+    -webkit-transform: perspective(800px) rotateY(15deg) translateY(-35px)
+      rotateX(10deg) scale(1);
+    transform: perspective(800px) rotateY(15deg) translateY(-35px)
+      rotateX(10deg) scale(1);
   }
 }
 
@@ -57,10 +72,36 @@
   }
 }
 
+@media screen and (min-width: 28.125em) {
+  .single {
+    &-text {
+      &__title {
+        font-size: 3rem;
+      }
+      &__paragraph {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $bp-smallest) {
   .single {
     &-img {
       width: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-small) {
+  .single {
+    &-text {
+      &__title {
+        font-size: 4rem;
+      }
+      &__paragraph {
+        font-size: 2.5rem;
+      }
     }
   }
 }
@@ -82,11 +123,16 @@
   }
 }
 
-// @media screen and (min-width: 62.5em) {
-//   //1000px, divide into row
-//   .single {
-//     &-img {
-//       width: 575px;
-//     }
-//   }
-// }
+@media screen and (min-width: 62.5em) {
+  //1000px, divide into row
+  .single {
+    flex-direction: row;
+    padding: 10rem 0;
+    &-img {
+      width: 50%;
+    }
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}

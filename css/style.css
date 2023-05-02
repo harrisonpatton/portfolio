@@ -193,7 +193,8 @@ body::before {
   z-index: -1; }
 
 .contact-button,
-.portfolio-button {
+.portfolio-button,
+.project-button {
   padding: 1rem 3rem;
   background-color: transparent;
   border: 1px solid var(--color-primary);
@@ -205,14 +206,21 @@ body::before {
   animation-name: topFadeOut;
   animation-duration: 7s; }
   .contact-button:hover,
-  .portfolio-button:hover {
+  .portfolio-button:hover,
+  .project-button:hover {
     background-color: var(--color-primary);
     transform: translateY(-5px); }
 
+.project-button {
+  margin-top: 2rem;
+  animation-name: none; }
+
 .contact-button a,
-.portfolio-button a {
+.portfolio-button a,
+.project-button a {
   text-decoration: none;
-  color: white; }
+  color: white;
+  font-family: 'Neucha', cursive; }
 
 .section-title {
   font-size: 3.5rem;
@@ -235,6 +243,8 @@ body::before {
 
 @media screen and (min-width: 28.125em) {
   .section-subtitle {
+    font-size: 2.2rem; }
+  .single-text__paragraph {
     font-size: 2.2rem; } }
 
 @media screen and (min-width: 37.5em) {
@@ -1124,7 +1134,8 @@ li a:hover:before {
 
 .projects {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
 
 .single {
   display: flex;
@@ -1145,7 +1156,9 @@ li a:hover:before {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    z-index: 20;
+    transition: 0.2s all; }
     .single-text__title {
       font-size: 2.5rem;
       color: var(--color-primary);
@@ -1156,17 +1169,36 @@ li a:hover:before {
     .single-text__paragraph {
       color: white;
       font-size: 1.9rem;
-      margin-top: 2.5rem;
+      padding: 5rem 0;
       font-family: 'Neucha', cursive;
       letter-spacing: 0.05rem; }
+
+.reverse img {
+  -webkit-transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg);
+  transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg); }
+  .reverse img:hover {
+    -webkit-transform: perspective(800px) rotateY(15deg) translateY(-35px) rotateX(10deg) scale(1);
+    transform: perspective(800px) rotateY(15deg) translateY(-35px) rotateX(10deg) scale(1); }
 
 @media screen and (min-width: 25em) {
   .single-img {
     width: 370px; } }
 
+@media screen and (min-width: 28.125em) {
+  .single-text__title {
+    font-size: 3rem; }
+  .single-text__paragraph {
+    font-size: 2.2rem; } }
+
 @media screen and (min-width: 31.25em) {
   .single-img {
     width: 450px; } }
+
+@media screen and (min-width: 37.5em) {
+  .single-text__title {
+    font-size: 4rem; }
+  .single-text__paragraph {
+    font-size: 2.5rem; } }
 
 @media screen and (min-width: 43.75em) {
   .single-img {
@@ -1175,3 +1207,12 @@ li a:hover:before {
 @media screen and (min-width: 56.25em) {
   .single-img {
     width: 750px; } }
+
+@media screen and (min-width: 62.5em) {
+  .single {
+    flex-direction: row;
+    padding: 10rem 0; }
+    .single-img {
+      width: 50%; }
+  .reverse {
+    flex-direction: row-reverse; } }
