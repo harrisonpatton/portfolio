@@ -204,12 +204,16 @@ body::before {
   text-transform: uppercase;
   transition: 0.4s all;
   animation-name: topFadeOut;
-  animation-duration: 7s; }
+  animation-duration: 7s;
+  background: linear-gradient(to right, var(--color-primary) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out; }
   .contact-button:hover,
   .portfolio-button:hover,
   .project-button:hover {
-    background-color: var(--color-primary);
-    transform: translateY(-5px); }
+    transform: translateY(-5px);
+    background-position: left bottom; }
 
 .project-button {
   margin-top: 2rem;
