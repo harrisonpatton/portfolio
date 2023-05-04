@@ -21,6 +21,34 @@
   }
 }
 
+.contact__button {
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transition: 0.4s all;
+  animation-name: topFadeOut;
+  animation-duration: 7s;
+  background: linear-gradient(
+    to right,
+    var(--color-primary) 50%,
+    transparent 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.35s ease-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    background-position: left bottom;
+  }
+}
+
 input::-webkit-input-placeholder {
   color: var(--color-primary);
   font-family: 'Permanent Marker', cursive;
@@ -70,6 +98,15 @@ textarea::-webkit-input-placeholder {
   font-family: 'Neucha', cursive;
 }
 
+input.contact__button {
+  color: white;
+}
+
+#form.contact__button {
+  margin-top: 2rem;
+  width: 50%;
+}
+
 .contact {
   &-title {
     font-family: 'Permanent Marker', cursive;
@@ -100,26 +137,13 @@ textarea::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
 
-    &--btn {
-      padding: 1rem 3rem;
-      background-color: transparent;
-      border: 1px solid var(--color-primary);
-      margin: 1rem 0;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      transition: all 0.2s;
-      color: #fff;
-      letter-spacing: 0.3rem;
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-3px);
+    }
 
-      &:hover {
-        cursor: pointer;
-        transform: translateY(-3px);
-        background-color: var(--color-primary);
-      }
-
-      &:active {
-        transform: translateY(3px);
-      }
+    &:active {
+      transform: translateY(3px);
     }
   }
 }
@@ -159,7 +183,7 @@ textarea::-webkit-input-placeholder {
     margin: 3% auto;
   }
 
-  .contact__button--btn {
+  .contact__button {
     font-size: 2rem;
   }
 
@@ -172,13 +196,13 @@ textarea::-webkit-input-placeholder {
 }
 
 @media screen and (min-width: 46.25em) {
-  .contact__button--btn {
+  .contact__button {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 55em) {
-  .contact__button--btn {
+  .contact__button {
     font-size: 2.7rem;
   }
 }

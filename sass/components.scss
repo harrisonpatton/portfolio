@@ -1,6 +1,7 @@
-//Contact Me Button
+@import '_variables.scss';
+//Buttons
 
-.contact-button,
+.contact__button,
 .portfolio-button,
 .project-button {
   padding: 1rem 3rem;
@@ -20,7 +21,7 @@
   );
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all 0.5s ease-out;
+  transition: all 0.35s ease-out;
 
   &:hover {
     transform: translateY(-5px);
@@ -29,16 +30,20 @@
 }
 
 .project-button {
-  margin-top: 2rem;
+  margin-top: 0rem;
   animation-name: none;
 }
 
-.contact-button a,
+.contact__button a,
 .portfolio-button a,
 .project-button a {
   text-decoration: none;
   color: white;
   font-family: 'Neucha', cursive;
+}
+.contact__button input {
+  color: #fff;
+  letter-spacing: 0.3rem;
 }
 
 //Layout
@@ -94,9 +99,6 @@
     &-subtitle {
       font-size: 3rem;
     }
-  }
-  .contact-button {
-    margin-top: 4rem;
   }
 }
 
