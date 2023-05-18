@@ -43,6 +43,10 @@ ul.skills3 {
   --c1: var(--color-primary);
 }
 
+#sk3 {
+  display: none;
+}
+
 ul.skills:after {
   content: '';
   position: absolute;
@@ -290,16 +294,16 @@ ul.skills li.sk-css {
   --per: 95;
 }
 ul.skills li.sk-htm {
-  --per: 90;
+  --per: 97;
 }
 ul.skills li.sk-jav {
   --per: 70;
 }
 ul.skills li.sk-php {
-  --per: 80;
+  --per: 65;
 }
 ul.skills li.sk-sql {
-  --per: 65;
+  --per: 60;
 }
 ul.skills li.sk-pug {
   --per: 40;
