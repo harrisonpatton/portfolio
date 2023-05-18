@@ -1661,11 +1661,7 @@ ul.skills li.more input:checked + label:hover {
   flex-direction: column;
   align-items: center; }
   .single-img {
-    width: 300px;
-    -webkit-transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
-    transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
-    transition: 0.6s ease;
-    box-shadow: 0 60px 123px -25px rgba(77, 112, 209, 0.42), 0 35px 75px -35px rgba(77, 112, 209, 0.42); }
+    width: 300px; }
   .single-text {
     display: flex;
     flex-direction: column;
@@ -1687,10 +1683,6 @@ ul.skills li.more input:checked + label:hover {
       padding: 5rem 0;
       font-family: 'Neucha', cursive;
       letter-spacing: 0.05rem; }
-
-.reverse img {
-  -webkit-transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg);
-  transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg); }
 
 @media screen and (min-width: 25em) {
   .single-img {
@@ -1725,12 +1717,19 @@ ul.skills li.more input:checked + label:hover {
     flex-direction: row;
     padding: 10rem 0; }
     .single-img {
-      width: 50%; }
+      width: 50%;
+      -webkit-transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
+      transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
+      transition: 0.6s ease;
+      box-shadow: 0 60px 123px -25px rgba(77, 112, 209, 0.42), 0 35px 75px -35px rgba(77, 112, 209, 0.42); }
       .single-img:hover {
         -webkit-transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
         transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1); }
   .reverse {
     flex-direction: row-reverse; }
-  .reverse img:hover {
-    -webkit-transform: perspective(800px) rotateY(15deg) translateY(-35px) rotateX(10deg) scale(1);
-    transform: perspective(800px) rotateY(15deg) translateY(-35px) rotateX(10deg) scale(1); } }
+  .reverse img {
+    -webkit-transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg);
+    transform: perspective(800px) rotateY(-25deg) scale(0.8) rotateX(10deg); }
+    .reverse img:hover {
+      -webkit-transform: perspective(800px) rotateY(15deg) translateY(-35px) rotateX(10deg) scale(1);
+      transform: perspective(800px) rotateY(15deg) translateY(-35px) rotateX(10deg) scale(1); } }
