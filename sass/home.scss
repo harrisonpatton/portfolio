@@ -134,7 +134,8 @@
 @media screen and (min-width: $bp-medium) {
   .portfolio-grid {
     &__box {
-      width: 16.666666%;
+      // width: 16.666666%; uncomment when RPG site tile is back live
+      width: 20%;
     }
   }
   #intro,

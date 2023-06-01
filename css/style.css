@@ -474,8 +474,8 @@ input.contact__button {
   margin-bottom: 5%; }
   .icon:hover {
     cursor: pointer; }
-  .icon-facebook {
-    background-image: url(../img/SVG/facebook.svg);
+  .icon-github {
+    background-image: url(../img/SVG/github.svg);
     background-size: cover;
     color: transparent;
     margin-right: 2.6rem; }
@@ -943,7 +943,7 @@ figcaption {
 
 @media screen and (min-width: 56.25em) {
   .portfolio-grid__box {
-    width: 16.666666%; }
+    width: 20%; }
   #intro,
   #portfolio-overview,
   #about-me,
