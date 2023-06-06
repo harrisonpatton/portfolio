@@ -8,8 +8,8 @@
   &-img {
     width: 300px;
 
-    box-shadow: 0 60px 123px -25px hsla(224, 59%, 56%, 0.42),
-      0 35px 75px -35px hsla(224, 59%, 56%, 0.42);
+    box-shadow: 0 60px 123px -25px hsla(223, 15%, 91%, 0.42),
+      0 35px 75px -35px hsla(220, 10%, 94%, 0.42);
   }
   &-text {
     display: flex;
@@ -109,8 +109,8 @@
         rotateX(10deg);
       transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
       transition: 0.6s ease;
-      box-shadow: 0 60px 123px -25px hsla(224, 59%, 56%, 0.42),
-        0 35px 75px -35px hsla(224, 59%, 56%, 0.42);
+      box-shadow: 0 60px 123px -25px hsla(240, 12%, 97%, 0.42),
+        0 35px 75px -35px hsla(225, 22%, 96%, 0.42);
       &:hover {
         -webkit-transform: perspective(800px) rotateY(-15deg) translateY(-50px)
           rotateX(10deg) scale(1);

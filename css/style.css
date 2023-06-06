@@ -22,8 +22,8 @@
     right: 80%; } }
 
 :root {
-  --color-primary: #2272ff;
-  --color-secondary: #1d1d1d; }
+  --color-primary: #213555;
+  --color-secondary: #4f709c; }
 
 #about-info .container {
   padding: 3%;
@@ -193,8 +193,8 @@ body::before {
   z-index: -1; }
 
 :root {
-  --color-primary: #2272ff;
-  --color-secondary: #1d1d1d; }
+  --color-primary: #213555;
+  --color-secondary: #4f709c; }
 
 .contact__button,
 .portfolio-button,
@@ -828,15 +828,15 @@ figcaption {
   color: white; }
 
 .different-color {
-  color: #2272ff;
+  color: #213555;
   font-family: 'Neucha', cursive; }
 
 .large-text {
   font-size: 1.7501rem; }
 
 :root {
-  --color-primary: #2272ff;
-  --color-secondary: #1d1d1d; }
+  --color-primary: #213555;
+  --color-secondary: #4f709c; }
 
 .hero::before {
   content: '';
@@ -871,7 +871,7 @@ figcaption {
     background: rgba(0, 0, 0, 0.5); }
 
 .hero-menu {
-  color: #2272ff;
+  color: var(--color-primary);
   font-family: 'Permanent Marker', cursive;
   letter-spacing: 0.1rem; }
   .hero-menu__subtitle {
@@ -914,7 +914,7 @@ figcaption {
     width: 50%;
     background-color: #2272ff;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.7;
     aspect-ratio: 1 /1; }
     .portfolio-grid__box:hover {
       opacity: 1;
@@ -952,8 +952,8 @@ figcaption {
     padding: 3rem 4.5rem; } }
 
 :root {
-  --color-primary: #2272ff;
-  --color-secondary: #1d1d1d; }
+  --color-primary: #213555;
+  --color-secondary: #4f709c; }
 
 .nav {
   display: flex;
@@ -991,14 +991,14 @@ figcaption {
   border: none;
   transition: all 0.5s ease-in-out;
   font-size: 3rem;
-  color: #2272ff;
+  color: var(--color-primary);
   z-index: 100; }
   .sandwich-button:hover {
     cursor: pointer; }
   .sandwich-button__close {
     background-color: transparent;
     margin-top: -2%;
-    color: #2272ff;
+    color: var(--color-primary);
     border: none;
     align-self: flex-end;
     margin-right: 3.5%;
@@ -1050,8 +1050,9 @@ figcaption {
   display: block;
   padding: 3.1rem 0;
   text-decoration: none;
-  color: #2272ff;
-  font-weight: 100; }
+  color: var(--color-primary);
+  font-weight: 100;
+  background-color: #9db2bf; }
 
 .dropdown-menu__home li a:hover {
   color: #c7cfb7; }
@@ -1105,7 +1106,7 @@ li a:before {
   left: 0;
   width: 0;
   height: 4px;
-  background-color: #2272ff;
+  background-color: var(--color-primary);
   transition: width 0.6s ease-in; }
 
 .dropdown-menu__home li a:before {
@@ -1115,7 +1116,7 @@ li a:before {
   left: 0;
   width: 0;
   height: 4px;
-  background-color: #2272ff;
+  background-color: var(--color-primary);
   transition: width 0.6s ease-in; }
 
 li a:hover:before {
@@ -1123,7 +1124,7 @@ li a:hover:before {
 
 .nav__nothome {
   display: flex;
-  background-color: #2272ff;
+  background-color: var(--color-primary);
   justify-content: space-around;
   align-items: center;
   transition: all 0.2s;
@@ -1171,8 +1172,8 @@ li a:hover:before {
     margin-top: -1.5%; } }
 
 :root {
-  --color-primary: #2272ff;
-  --color-secondary: #1d1d1d; }
+  --color-primary: #213555;
+  --color-secondary: #4f709c; }
 
 :root {
   --c1: #2272ff;
@@ -1652,8 +1653,8 @@ ul.skills li.more input:checked + label:hover {
     background: var(--c1); } }
 
 :root {
-  --color-primary: #2272ff;
-  --color-secondary: #1d1d1d; }
+  --color-primary: #213555;
+  --color-secondary: #4f709c; }
 
 .single {
   display: flex;
@@ -1662,7 +1663,7 @@ ul.skills li.more input:checked + label:hover {
   align-items: center; }
   .single-img {
     width: 300px;
-    box-shadow: 0 60px 123px -25px rgba(77, 112, 209, 0.42), 0 35px 75px -35px rgba(77, 112, 209, 0.42); }
+    box-shadow: 0 60px 123px -25px rgba(229, 231, 235, 0.42), 0 35px 75px -35px rgba(238, 239, 241, 0.42); }
   .single-text {
     display: flex;
     flex-direction: column;
@@ -1722,7 +1723,7 @@ ul.skills li.more input:checked + label:hover {
       -webkit-transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
       transform: perspective(800px) rotateY(18deg) scale(0.8) rotateX(10deg);
       transition: 0.6s ease;
-      box-shadow: 0 60px 123px -25px rgba(77, 112, 209, 0.42), 0 35px 75px -35px rgba(77, 112, 209, 0.42); }
+      box-shadow: 0 60px 123px -25px rgba(246, 246, 248, 0.42), 0 35px 75px -35px rgba(243, 244, 247, 0.42); }
       .single-img:hover {
         -webkit-transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
         transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1); }
