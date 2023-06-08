@@ -201,7 +201,7 @@ body::before {
 .project-button {
   padding: 1rem 3rem;
   background-color: transparent;
-  border: 1px solid var(--color-primary);
+  border: 1.5px solid var(--color-primary);
   margin: 1rem 0;
   margin-top: 5rem;
   font-size: 1.8rem;
@@ -252,6 +252,9 @@ body::before {
   animation-duration: 7s;
   transition: all 0.2s;
   letter-spacing: 0.05rem; }
+
+.section-background {
+  background-color: #dde6ed; }
 
 @media screen and (min-width: 28.125em) {
   .section-subtitle {
@@ -914,7 +917,7 @@ figcaption {
     width: 50%;
     background-color: #2272ff;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.8;
     aspect-ratio: 1 /1; }
     .portfolio-grid__box:hover {
       opacity: 1;
