@@ -254,7 +254,11 @@ body::before {
   letter-spacing: 0.05rem; }
 
 .section-background {
-  background-color: #dde6ed; }
+  background-color: #dde6ed;
+  padding: 2rem 3.5rem; }
+
+#projects-section {
+  margin-top: 2rem; }
 
 @media screen and (min-width: 28.125em) {
   .section-subtitle {
@@ -904,7 +908,7 @@ figcaption {
 #portfolio-overview,
 #about-me,
 #about-skills,
-#projects-section {
+.projects {
   padding: 3rem 2.25rem;
   padding-top: 0; }
 
@@ -951,7 +955,7 @@ figcaption {
   #portfolio-overview,
   #about-me,
   #about-skills,
-  #projects-section {
+  .projects {
     padding: 3rem 4.5rem; } }
 
 :root {
