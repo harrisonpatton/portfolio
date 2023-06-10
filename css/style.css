@@ -255,7 +255,8 @@ body::before {
 
 .section-background {
   background-color: #dde6ed;
-  padding: 2rem 3.5rem; }
+  padding: 0.75rem 2rem;
+  padding-bottom: 2rem; }
 
 #projects-section {
   margin-top: 2rem; }
@@ -270,7 +271,17 @@ body::before {
   .section-title {
     font-size: 4rem; }
   .section-subtitle {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .section-background {
+    background-color: #dde6ed;
+    padding: 2rem 2rem;
+    padding-bottom: 3rem; } }
+
+@media screen and (min-width: 43.75em) {
+  .section-background {
+    background-color: #dde6ed;
+    padding: 3rem 2rem;
+    padding-bottom: 4rem; } }
 
 @media screen and (min-width: 50em) {
   .section-title {
@@ -1666,6 +1677,7 @@ ul.skills li.more input:checked + label:hover {
 .single {
   display: flex;
   padding: 2rem 0;
+  padding-top: 3rem;
   flex-direction: column;
   align-items: center; }
   .single-img {
@@ -1698,10 +1710,12 @@ ul.skills li.more input:checked + label:hover {
     width: 370px; } }
 
 @media screen and (min-width: 28.125em) {
-  .single-text__title {
-    font-size: 3rem; }
-  .single-text__paragraph {
-    font-size: 2.2rem; } }
+  .single {
+    padding-top: 4rem; }
+    .single-text__title {
+      font-size: 3rem; }
+    .single-text__paragraph {
+      font-size: 2.2rem; } }
 
 @media screen and (min-width: 31.25em) {
   .single-img {
