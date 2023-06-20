@@ -70,7 +70,6 @@
 #intro {
   padding: 3rem 2.25rem;
   height: 100vh;
-  padding-top: 9rem;
 }
 
 #portfolio-overview,
@@ -144,5 +143,11 @@
   #about-skills,
   .projects {
     padding: 3rem 4.5rem;
+  }
+}
+
+@media screen and (min-width: 71.75em) {
+  #intro {
+    padding-top: 9rem;
   }
 }

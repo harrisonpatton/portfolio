@@ -969,6 +969,10 @@ figcaption {
   .projects {
     padding: 3rem 4.5rem; } }
 
+@media screen and (min-width: 71.75em) {
+  #intro {
+    padding-top: 9rem; } }
+
 :root {
   --color-primary: #213555;
   --color-secondary: #4f709c; }
