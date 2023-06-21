@@ -1707,7 +1707,8 @@ ul.skills li.more input:checked + label:hover {
       font-size: 1.9rem;
       padding: 5rem 0;
       font-family: 'Neucha', cursive;
-      letter-spacing: 0.05rem; }
+      letter-spacing: 0.05rem;
+      line-height: 1.3; }
 
 @media screen and (min-width: 25em) {
   .single-img {
