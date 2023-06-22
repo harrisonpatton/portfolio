@@ -254,7 +254,7 @@ body::before {
   letter-spacing: 0.05rem; }
 
 .section-background {
-  background-color: #dde6ed;
+  background-color: #9db2bf;
   padding: 0.75rem 2rem;
   padding-bottom: 2rem; }
 
@@ -273,13 +273,11 @@ body::before {
   .section-subtitle {
     font-size: 2.5rem; }
   .section-background {
-    background-color: #dde6ed;
     padding: 2rem 2rem;
     padding-bottom: 3rem; } }
 
 @media screen and (min-width: 43.75em) {
   .section-background {
-    background-color: #dde6ed;
     padding: 3rem 2rem;
     padding-bottom: 4rem; } }
 
