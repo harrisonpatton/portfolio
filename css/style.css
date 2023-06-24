@@ -1290,7 +1290,7 @@ ul.skills li {
 ul.skills li:before {
   content: '';
   position: absolute;
-  background: #1c1c1c;
+  background: #9db2bf;
   height: 16px;
   width: 100%;
   left: 0;
